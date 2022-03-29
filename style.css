@@ -1,0 +1,89 @@
+.cord {
+    width: 230px;
+    height: 300;
+    padding: 15px;
+    margin: 0 auto;
+    transform: translateY(50px);
+    color: white;
+    border-radius: 5px;
+    background-color:#242436;
+    font-size: 0.8rem;
+}
+.cord .img {
+    height:55%;
+    width: 100%;
+    position: relative;
+}
+.cord .img > span {
+    color: white;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    height: 3px;
+    align-content: space-around;
+    top:50%;
+    right: 50%;
+    transform: translate(-50,-50);
+    opacity: 0;
+    transition: .4s;
+}
+
+.cord .img:hover > span {
+  opacity: 1;
+}
+.cord .img:hover img {
+    opacity: .5;
+}
+.cord .img img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+body {
+    background-color: #151532;
+    font-family: sans-serif;
+}
+.cord .body p {
+   color: #9b9bd9;
+   font-size:0.85em;
+   width: 84%;
+   line-height: 1.7;
+   letter-spacing: .4px;
+}
+.cord .body .icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 4px;
+    color: #9b9bd9;
+    font-size:0.85em;
+  
+    line-height: 1.7;
+    letter-spacing: .4px;
+}
+.cord .body .icon .prime {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.cord .body .icon .secend{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.cord .footer {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    column-gap:20px ;
+}
+.cord .footer img {
+    max-width: 30px;
+}
+.cord .footer span .identifier {
+    color: #9b9bd9;
+   font-size:0.85em;
+   width: 84%;
+   line-height: 1.7;
+   letter-spacing: .4px;
+} 
